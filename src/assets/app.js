@@ -1,19 +1,23 @@
-// const botao = document.querySelector(".btn");
-// const botaoFechar = document.querySelector(".close-icon");
-// const trailerContainer = document.querySelector(".trailer-container");
-// const videoEl = document.querySelector("video");
+// POPUP VIDEO
+const btnElement = document.querySelector('.popup-button');
+const trailerElement = document.querySelector('.trailer-container');
+const closeButtonElement = document.querySelector('.close-icon');
+const videoElement = document.querySelector('trailer-container video'); 
 
-// botao.addEventListener("click", ()=>{
-//     trailerContainer.classList.remove("active");
-// });
+btnElement.addEventListener('click',()=>{
+    trailerElement.classList.remove('active');
+})
 
-// botaoFechar.addEventListener("click", ()=>{
-//     trailerContainer.classList.add("active");
-//     videoEl.pause();
-//     videoEl.currentTime = 0;
-// });
+closeButtonElement.addEventListener('click',()=>{
+    trailerElement.classList.add('active');
+    videoElement.pause();
+    videoElement.currentTime = 0;
+})
 
 
+
+
+// ANIMAÇÃO DE SCROLL
 const elements = document.querySelectorAll('.hidden');
 
 const observer = new IntersectionObserver(entries => {

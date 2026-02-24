@@ -6,12 +6,11 @@
     <link rel="stylesheet" href="./src/assets/styles.css">
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-    />
+    crossorigin="anonymous"   referrerpolicy="no-referrer" />
     <link rel="icon" type="image/x-icon" href="./src/assets/media/icon.png">
     <title>GOL QUADRADO</title>
 </head>
+<!-- NAVBAR -->
 <nav class="navbar">
     <div class="logo">GOL BATEDEIRA</div>
     <div class="nav-links">
@@ -20,7 +19,6 @@
         <a href="#contato">Contato</a>
     </div>
 </nav>
-
 <!-- HERO -->
 <section class="hero hidden">
     <div class="hero-content">
@@ -31,9 +29,19 @@
     </div>
 </section>
 
+<!-- POPUP VIDEO -->
+<div class="popup-container">
+    <button class="popup-button">Veja a propaganda do lançamento</button>
+</div>
+<div class="trailer-container active">
+    <video src="./src/assets/media/videoplayback.mp4" controls="true"></video>
+    <i class="fas fa-times fa-2x close-icon"></i>
+</div>
+
+
 <!-- SOBRE -->
 <section id="sobre" class="sobre hidden">
-    <img src="./src/assets/IMG/gol-amarelo.jpg">
+    <img src="./src/assets/media/gol-amarelo.jpg">
     <div>
         <h2>Sobre o Projeto</h2>
         <p>A história do VW Gol começou lá na segunda metade dos anos 70, quando a Volkswagen desistiu do Projeto BY, uma espécie de Scirocco, que usava praticamente a mesma mecânica do VW Passat. <br>
@@ -42,6 +50,8 @@
         </p>
     </div>
 </section>
+
+
 <!-- MODELO 3D -->
     <section class="model-3d hidden">
     <h2>MODELO 3D DO GOL 1993</h2>
